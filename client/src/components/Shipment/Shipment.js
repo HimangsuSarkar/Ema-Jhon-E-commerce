@@ -14,7 +14,7 @@ const Shipment = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
   const [shippingData, setShippingData] = useState(null);
 
   const onSubmit = (data) => {

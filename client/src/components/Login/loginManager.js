@@ -47,6 +47,7 @@ export const handleFbSignIn = () => {
     .signInWithPopup(fbProvider)
     .then(function (result) {
       var token = result.credential.accessToken;
+      console.log(token);
       var user = result.user;
       user.success = true;
       return user;

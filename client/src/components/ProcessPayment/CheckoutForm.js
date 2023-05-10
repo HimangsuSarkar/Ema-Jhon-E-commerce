@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
+
 import {
   CardElement,
-  Elements,
   useStripe,
   useElements,
 } from "@stripe/react-stripe-js";

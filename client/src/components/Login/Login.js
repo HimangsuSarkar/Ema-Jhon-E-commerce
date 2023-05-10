@@ -23,7 +23,7 @@ function Login() {
 
   initializeLoginFramework();
 
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [ setLoggedInUser] = useContext(UserContext);
   const history = useHistory();
   const location = useLocation();
   let { from } = location.state || { from: { pathname: "/" } };
